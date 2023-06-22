@@ -5,7 +5,7 @@
     "description": "API routes for pets & potential owners collection",
     "version": "1.0.0"
   },
-  "host": "localhost:8080",
+  "host": "ortega-cse341-lesson-5-8.onrender.com",
   "basePath": "/",
   "tags": [
     {

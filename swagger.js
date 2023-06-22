@@ -5,7 +5,7 @@ const doc = {
     title: 'CSE 341 Project API',
     description: 'API routes for pets & potential owners collection',
   },
-  host: 'localhost:8080',
+  host: 'ortega-cse341-lesson-5-8.onrender.com',
   schemes: ['https'],
 };
 
