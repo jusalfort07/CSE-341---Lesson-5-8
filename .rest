@@ -1,0 +1,43 @@
+###Lesson 5
+###LOCAL ENVIRONMENT
+
+###Get All Pets
+GET http://localhost:8080/pets
+
+### Get All Potential Owners
+GET http://localhost:8080/potential_owners
+
+### Create pets
+POST http://localhost:8080/pets HTTP/1.1
+content-type: application/json
+
+{
+    "name":"Bolt",
+    "birthday":"01-01-2019",
+    "color":"White",
+    "breed":"Aspin",
+    "sex":"Male",
+    "size": "Small",
+    "weight": "12"
+}
+
+###RENDER ENVIRONMENT
+###Get All Pets
+GET https://ortega-cse341-lesson-5-8.onrender.com/pets
+
+### Get All Potential Owners
+GET https://ortega-cse341-lesson-5-8.onrender.com/potential_owners
+
+### Create pets
+POST https://ortega-cse341-lesson-5-8.onrender.com/pets HTTP/1.1
+content-type: application/json
+
+{
+    "name":"Bolt",
+    "birthday":"01-01-2019",
+    "color":"White",
+    "breed":"Aspin",
+    "sex":"Male",
+    "size": "Small",
+    "weight": "12"
+}
