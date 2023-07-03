@@ -23,6 +23,24 @@ const potentialOwnersValidation = () => {
     ]
 }
 
+const adminsValidation = () => {
+    return[
+        body('firstName', 'First name is required').not().isEmpty(),
+        body('lastName', 'Last Name is required').not().isEmpty(),
+        body('birthday', 'Birthday is required').not().isEmpty(),
+        body('isActive', 'IsActive field is required').not().isEmpty(),
+    ]
+}
+
+const donatorsValidation = () => {
+    return[
+        body('firstName', 'First name is required').not().isEmpty(),
+        body('lastName', 'Last Name is required').not().isEmpty(),
+        body('amount', 'Amount is required').not().isEmpty(),
+    ]
+}
+
+
 const validate = (req,res,next) => {
     const errors = validationResult(req);
 
@@ -41,5 +59,7 @@ const validate = (req,res,next) => {
 module.exports = {
     petsValidation,
     potentialOwnersValidation,
+    adminsValidation,
+    donatorsValidation,
     validate,
 }

@@ -55,6 +55,20 @@ app.use(bodyParser.json())
         res.setHeader('Access-Control-Allow-Origin', '*');
         next();
     })
+    .use('/admins', isLoggedIn, require('./routes/admins'));
+
+app.use(bodyParser.json())
+    .use((req, res, next) => {
+        res.setHeader('Access-Control-Allow-Origin', '*');
+        next();
+    })
+    .use('/donators', isLoggedIn, require('./routes/donators'));
+
+app.use(bodyParser.json())
+    .use((req, res, next) => {
+        res.setHeader('Access-Control-Allow-Origin', '*');
+        next();
+    })
     .use('/pets', isLoggedIn, require('./routes/pets'));
 
 app.use(bodyParser.json())
